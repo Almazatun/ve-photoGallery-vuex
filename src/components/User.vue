@@ -1,7 +1,7 @@
 <template>
-  <div class="box-content h-80 w-50 p-4 border-2 rounded-lg hover:shadow-xl xl:transition-shadow ease-in-out
-                cursor-pointer
-"
+  <div class="box-content h-80 w-50 p-4 border-8 rounded-2xl hover:shadow-2xl xl:transition-shadow ease-in-out
+                cursor-pointer opacity-95 hover:opacity-100"
+       :style="{'background-color': color}"
        @click="goAlbumsOfUser(idUser)"
   >
     <div>
@@ -15,7 +15,7 @@ import {useRouter} from "vue-router";
 
 export default {
   name: "User",
-  props: ['userName', 'idUser'],
+  props: ['userName', 'idUser', 'color'],
   setup() {
     const router = useRouter()
 

@@ -1,15 +1,18 @@
 export const GETTERS = {
-    isFetch(state){
+    isFetch(state) {
         return state.isFetching
     },
     users(state) {
         return state.users
     },
-    userAlbums(state){
+    userAlbums(state) {
         return state.userAlbums
     },
-    userAlbumPhotos (state){
+    userAlbumPhotos(state) {
         return state.userAlbumPhotos
+    },
+    colors(state) {
+        return state.colors
     }
 
 }

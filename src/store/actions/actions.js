@@ -5,13 +5,15 @@ import {
     SET_USER_ALBUMS,
     SET_USERS
 } from "@/utils/actions_mutation";
+import {createNewData} from "@/utils/usersDataArr";
 
 export const ACTIONS = {
-    async getUsersJSON({commit}) {
+    getUsersJSON: async function ({commit}, payload) {
         try {
             commit(IS_FETCHING_DATA_FROM_SERVER, true)
             const usersData = await API.getUsers()
-            commit(SET_USERS, usersData)
+            const newUsersData = createNewData(payload.arrColors, usersData)
+            commit(SET_USERS, newUsersData)
             commit(IS_FETCHING_DATA_FROM_SERVER, false)
         } catch (error) {
             alert(error)
