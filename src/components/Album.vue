@@ -1,10 +1,15 @@
 <template>
   <div v-for="album in userAlbums" :key="album.id">
-    <div class="box-content h-50 w-50 p-4 border-2 rounded-lg hover:shadow-xl xl:transition-shadow ease-in-out
-                bg-clip-padding p-6 bg-indigo-600 border-4 border-indigo-300 border-dashed
-                cursor-pointer
+    <div class="box-content h-60 w-50 p-4 border-2 rounded-2xl hover:shadow-2xl xl:transition-shadow ease-in-out
+                bg-clip-padding p-6 bg-indigo-100 border-8 border-blue-200
+                cursor-pointer hover:bg-indigo-300
+                 p-4 text-left
                 " @click="goParticularAlbumPhoto(album.userId, album.id)">
-      <span class="font-sans">{{ album.title }}</span>
+      <div class="flex flex-col">
+        <img class="mr-10 h-20 w-20" src="https://image.flaticon.com/icons/png/128/2580/2580777.png" alt="album icon">
+        <span class="font-bold mt-10">Album title: </span>
+        <span class="font-medium lg:break-words md:break-words sm:break-all">{{ album.title }}</span>
+      </div>
     </div>
   </div>
 
