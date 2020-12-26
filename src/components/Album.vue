@@ -6,7 +6,8 @@
                  p-4 text-left
                 " @click="goParticularAlbumPhoto(album.userId, album.id)">
       <div class="flex flex-col">
-        <img class="mr-10 h-20 w-20" src="https://image.flaticon.com/icons/png/128/2580/2580777.png" alt="album icon">
+        <span v-if="album.id < 10" class="text-7xl text-left font-bold border-b-8 border-pink-500 border-opacity-25">{{`0${album.id}`}}</span>
+        <span v-else class="text-7xl text-left font-bold border-b-8 border-pink-500 border-opacity-25">{{album.id}}</span>
         <span class="font-bold mt-10">Album title: </span>
         <span class="font-medium lg:break-words md:break-words sm:break-all">{{ album.title }}</span>
       </div>
