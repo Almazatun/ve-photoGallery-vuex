@@ -1,4 +1,12 @@
-# ve-jsonplaceholder-user-gallery
+# 📷Photo gallery
+
+## 🔄Rest API
+🛰Whole information about REST API are here [{JSON}PlaceHolder](https://jsonplaceholder.typicode.com/).
+## Base URL
+```
+https://jsonplaceholder.typicode.com
+```
+## [▶ Launch App]()
 
 ## Project setup
 ```

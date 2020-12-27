@@ -8,7 +8,7 @@ import {
 import {createNewData} from "@/utils/usersDataArr";
 
 export const ACTIONS = {
-    getUsersJSON: async function ({commit}, payload) {
+    async getUsersJSON ({commit}, payload) {
         try {
             commit(IS_FETCHING_DATA_FROM_SERVER, true)
             const usersData = await API.getUsers()
