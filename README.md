@@ -6,7 +6,7 @@
 ```
 https://jsonplaceholder.typicode.com
 ```
-## [▶ Launch App]()
+## [▶ Launch App](https://almazatun.github.io/ve-photoGallery-vuex/#/)
 
 ## Project setup
 ```
