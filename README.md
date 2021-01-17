@@ -1,7 +1,18 @@
 # 📷Photo gallery
 
+![screen](/defaultPage.PNG/)
+
+### Implemented with Vue 3 | Vuex | Composition API | Vue-Router
+
+
+## Nested Routes
+  * Users
+  * User ↔ User albums
+  * User ↔ User albums ↔ Album photos
+
 ## 🔄Rest API
 🛰Whole information about REST API are here [{JSON}PlaceHolder](https://jsonplaceholder.typicode.com/).
+
 ## Base URL
 ```
 https://jsonplaceholder.typicode.com
